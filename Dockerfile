@@ -23,7 +23,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         software-properties-common \
         unzip \
         wget \
+	python3-pip \
 	xvfb
+
 # Add openjdk-r/ppa and install correct JDK version
 RUN DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:openjdk-r/ppa -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
